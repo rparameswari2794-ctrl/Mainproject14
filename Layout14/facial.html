@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/logo.png">
+                <span>Luxe Salon</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a> </li>
+                    <li class="nav-item"><a href="service.html" class="nav-link active">Services</a> </li>
+                    <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a> </li>
+                    <li class="nav-item"><button type="button" class="home-btn" onclick="openLogin()">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="loginmodal" id="loginModal">
+                    <div class="login-box">
+                        <img src="images/log-logo.png">
+                        <h2>WORLD'S LAST MINUTE ORDERS</h2>
+                        <h5>Login or Sign Up</h5>
+                        <input type="tel" id="phone" placeholder="Enter Your Phone Number" maxlength="10">
+<small id="phoneError" style="color:red;"></small>
+                        <button type="button" class="log-btn" onclick="openLog1()">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="logmodal" id="logModal">
+                    <div class="log-box">
+                       <img src="images/log-logo.png">
+                       <h3>OTP VERIFICATION</h3>
+                       <h5>We have sent a verification code to</h5>
+                       <h5>Your Mobile Number</h5>
+                       <p>
+  <input type="tel" id="otp1" maxlength="1">
+  <input type="tel" id="otp2" maxlength="1">
+  <input type="tel" id="otp3" maxlength="1">
+  <input type="tel" id="otp4" maxlength="1">
+</p>
+<small id="otpError" style="color:red;"></small>
+                       <button type="button" class="log-btn" onclick="openLog2()">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="skin-card">
+                <h2>Skin Care Treatments</h2>
+                    <p>Achieve glowing, healthy skin with our expert treatments tailored to your needs.</p>
+                    <div class="home-div">
+                        <button type="button" class="book-btn" onclick="openAlert2()">Book Appointment</button>
+                    </div>
+                    <div class="book-alert2" id="book-alert2">
+                        <div class="book-box1">
+                          <p>Please Login First</p>
+                        </div>
+                        
+                    </div>
+            </div>
+            <h5 class="home-h5">Skin Care Services</h5>
+            <div class="service-card">
+                    <div class="face-card">
+                        <img src="images/skin.png">
+                        <h6>Facial</h6>
+                        <p>Deep cleansing and hydration for a refreshed complexion.</p>
+                    </div>
+                    <div class="face-card">
+                        <img src="images/skin1.png">
+                        <h6>Clean-Up</h6>
+                        <p>Quick and effective cleansing to remove impurities</p>
+                    </div>
+                    <div class="face-card">
+                        <img src="images/skin2.png">
+                        <h6>Acne Treatment</h6>
+                        <p>Targeted Treatment to reduce acne and prevent breakouts.</p>
+                    </div>
+                    <div class="face-card">
+                        <img src="images/skin3.png">
+                        <h6>Anti-Aging</h6>
+                        <p>Rejuvenating treatments to minimize wrinkles and fine lines.</p>
+                    </div>
+                    <div class="face-card">
+                        <img src="images/skin4.png">
+                        <h6>Skin Brightening</h6>
+                        <p>Enhance your skins natural radiance and even out skin tone.</p>
+                    </div>
+                </div>
+
+                <div class="face-card2">
+                    <div><span>Duration</span><br><p>60 mins</p></div>
+                    <div><span>Price</span><br><p>$80</p></div>
+                </div>
+                <div class="face-card2">
+                    <div><span>Duration</span><br><p>45 mins</p></div>
+                    <div><span>Price</span><br><p>$50</p></div>
+                </div>
+                <div class="face-card2">
+                    <div><span>Duration</span><br><p>75 mins</p></div>
+                    <div><span>Price</span><br><p>$100</p></div>
+                </div>
+                <div class="face-card2">
+                    <div><span>Duration</span><br><p>90 mins</p></div>
+                    <div><span>Price</span><br><p>$120</p></div>
+                </div>
+                <div class="face-card2">
+                    <div><span>Duration</span><br><p>60 mins</p></div>
+                    <div><span>Price</span><br><p>$90</p></div>
+                </div>
+            <h5 class="home-h5" style="margin-top: 50px;margin-bottom: 20px;">Customer Testimonials</h5>
+            <div class="face-card4">
+                    <div class="home-head">
+                        <img src="images/test.png">
+                        <p>Sophia Clark<br><span>2 months ago</span></p>
+                    </div>
+                    <div class="home-body">
+                        <p class="hb-p"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p>I had an amazing experience at Luxe Salon! The staff was incredibly friendly and professional, and I absolutely loved my new haircut. I highly recommand this salon to anyone looking for top-notch service and a stylish, modern look.</p>
+                        <p class="hb-p1"><i class="fa-regular fa-thumbs-up"></i><span>10</span><i class="fa-regular fa-thumbs-down"></i><span>1</span></p>
+                    </div>
+                </div>
+                <div class="face-card4">
+                    <div class="home-head">
+                        <img src="images/style1.png">
+                        <p>Emma Bennett<br><span>3 months ago</span></p>
+                    </div>
+                    <div class="home-body">
+                        <p class="hb-p"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p>I had an amazing experience at Luxe Salon! The staff was incredibly friendly and professional, and I absolutely loved my new haircut. I highly recommand this salon to anyone looking for top-notch service and a stylish, modern look.</p>
+                        <p class="hb-p1"><i class="fa-regular fa-thumbs-up"></i><span>10</span><i class="fa-regular fa-thumbs-down"></i><span>1</span></p>
+                    </div>
+                </div>
+                <div class="face-card4">
+                    <div class="home-head">
+                        <img src="images/style3.png">
+                        <p>Olivia Carter<br><span>4 months ago</span></p>
+                    </div>
+                    <div class="home-body">
+                        <p class="hb-p"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p>I had an amazing experience at Luxe Salon! The staff was incredibly friendly and professional, and I absolutely loved my new haircut. I highly recommand this salon to anyone looking for top-notch service and a stylish, modern look.</p>
+                        <p class="hb-p1"><i class="fa-regular fa-thumbs-up"></i><span>10</span><i class="fa-regular fa-thumbs-down"></i><span>1</span></p>
+                    </div>
+                </div>
+            
+                <div class="home-card5">
+                    <h2>Book Your Perfect Salon Appointment</h2>
+                    <p>Experience the ultimate in beauty and relaxation with our expert team and luxurious treatments.</p>
+                    <div class="home-div">
+                        <button type="button" class="book-btn" onclick="openAlert1()">Book Appointment</button>
+                        <button type="button" class="book-btn1" onclick="openAlert1()">Get Membership</button>
+                    </div>
+                    <div class="book-alert1" id="book-alert1">
+                        <div class="book-box">
+                            <p>Please Login First</p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+  </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="foot-card">
+                        <div class="foot-div">
+                            <a href="home.html" class="foot-a"><img src="images/logo1.png">
+                            <span>Luxe Salon</span></a>
+                        </div>
+                        <div class="foot-div1">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="foot-card1">
+                        <h5>Terms & Policies</h5>
+                        <p>Terms of Service</p>
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="foot-card1">
+                        <h5>Home</h5>
+                        <p>Service</p>
+                        <p>Membership</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="foot-card1">
+                        <h5>Contact</h5>
+                        <p>(+234)8089466435</p>
+                        <p>agencycr@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="foot-card2">
+                        <p>&copy; Luxe Salon 2022. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+function openLogin() {
+    document.getElementById("loginModal").style.display = "block";
+}
+
+// Phone Validation
+function openLog1() {
+    let phone = document.getElementById("phone").value;
+    let error = document.getElementById("phoneError");
+
+    if (!/^\d{10}$/.test(phone)) {
+        error.innerText = "Enter valid 10 digit phone number";
+        return;
+    }
+
+    error.innerText = "";
+    document.getElementById("loginModal").style.display = "none";
+    document.getElementById("logModal").style.display = "block";
+}
+
+// OTP Validation
+function openLog2() {
+    let o1 = document.getElementById("otp1").value;
+    let o2 = document.getElementById("otp2").value;
+    let o3 = document.getElementById("otp3").value;
+    let o4 = document.getElementById("otp4").value;
+
+    let error = document.getElementById("otpError");
+
+    if (o1 === "" || o2 === "" || o3 === "" || o4 === "") {
+        error.innerText = "Enter complete OTP";
+        return;
+    }
+
+    error.innerText = "";
+    
+    setTimeout(() => {
+        document.getElementById("logModal").style.display = "none";
+        window.location.href="home1.html";
+    }, 1000);
+    
+}
+
+// Alert (Only if not logged in)
+function openAlert() {
+    document.getElementById("book-alert").style.display = "block";
+
+    setTimeout(() => {
+        document.getElementById("book-alert").style.display = "none";
+    }, 2000);
+}
+
+function openAlert1() {
+    document.getElementById("book-alert1").style.display = "block";
+
+    setTimeout(() => {
+        document.getElementById("book-alert1").style.display = "none";
+    }, 2000);
+}
+
+
+
+function openAlert2() {
+    document.getElementById("book-alert2").style.display = "block";
+
+    setTimeout(() => {
+        document.getElementById("book-alert2").style.display = "none";
+    }, 2000);
+}
+
+function openHairService(){
+    window.location.href="hair.html";
+}
+function openFacialService(){
+    window.location.href="facial.html";
+}
+function openSpaService(){
+    window.location.href="spa.html";
+}
+function openMakeupService(){
+    window.location.href="makeup.html";
+}
+
+</script>
+</body>
+
+</html>
